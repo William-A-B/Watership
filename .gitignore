@@ -152,3 +152,5 @@ cython_debug/
 #.idea/
 
 .pdf
+botToken.env
+Pebblehost_Invoice-2049735.pdf
