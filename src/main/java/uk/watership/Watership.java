@@ -7,11 +7,11 @@ import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 import net.dv8tion.jda.api.sharding.DefaultShardManagerBuilder;
 import net.dv8tion.jda.api.sharding.ShardManager;
-import net.will88.commands.CommandManager;
-import net.will88.watership.listeners.Counting;
-import net.will88.watership.listeners.ExpSystem;
-import net.will88.watership.listeners.MemberJoinRemoveListener;
-import net.will88.watership.listeners.MessageReceivedListener;
+import uk.watership.commands.CommandManager;
+import uk.watership.listeners.Counting;
+import uk.watership.listeners.ExpSystem;
+import uk.watership.listeners.MemberJoinRemoveListener;
+import uk.watership.listeners.MessageReceivedListener;
 
 public class Watership {
 
