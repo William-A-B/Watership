@@ -1,7 +1,6 @@
 package uk.watership;
 
-import java.io.File; // Import the File class
-import java.io.FileNotFoundException; // Import this class to handle errors
+import java.io.InputStream;
 import java.util.Scanner; // Import the Scanner class to read text files
 
 public class FileManager {
@@ -13,20 +12,14 @@ public class FileManager {
     public String getBotToken() {
         String botToken = "";
 
-        try {
-            File tokenFile = new File("botToken.txt");
-            Scanner tokenReader = new Scanner(tokenFile);
+        InputStream file = ClassLoader.getSystemResourceAsStream("botToken.txt");
+//            File tokenFile = new File("/botToken.txt");
+        Scanner tokenReader = new Scanner(file);
 
-            while (tokenReader.hasNextLine() == true) {
-                botToken = tokenReader.nextLine();
-            }
-            tokenReader.close();
-
+        while (tokenReader.hasNextLine() == true) {
+            botToken = tokenReader.nextLine();
         }
-        catch (FileNotFoundException e) {
-            System.out.println("Error Occured");
-            e.printStackTrace();
-        }
+        tokenReader.close();
         return botToken;
     }
 }
