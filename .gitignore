@@ -154,3 +154,4 @@ cython_debug/
 .pdf
 botToken.env
 Pebblehost_Invoice-2049735.pdf
+src/main/resources/botToken.txt
